@@ -24,7 +24,13 @@ pip install -e ".[dev]"
 
 ## Limitations
 
-<!-- Honest and short: what it does NOT do, known gaps. -->
+- Does not validate external URLs (http/https) – only checks internal relative links.
+- Only processes files with a `.md` extension; other markup formats are ignored.
+- Ignores custom URL schemes (e.g., `mailto:`, `tel:`) and treats them as valid.
+- Does not verify image existence or alt‑text completeness.
+- Path handling is POSIX‑centric; Windows back‑slash paths are not fully supported.
+- The linter is not exhaustive – it may miss complex anchor‑hash mismatches in generated headings.
+
 
 ## Development
 
