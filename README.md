@@ -2,7 +2,7 @@
 
 **A documentation linter that verifies internal Markdown relative links, anchor tags, and code snippet include paths across sprawling README repositories.**
 
-<!-- THE PROBLEM: 2-3 concrete lines on the annoying thing this removes. -->
+Sprawling documentation repos rot fast: relative links point to nowhere after refactoring, headers shift and break anchor hashes, and snippet includes drift out of sync with actual source code. MarkLinter runs in CI or pre-commit to catch broken references instantly, saving maintainers from embarrassing 404s and stale guides.
 
 ## Example
 
